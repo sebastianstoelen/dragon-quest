@@ -1,0 +1,252 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &247198070364063973
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5640314306063321621}
+  - component: {fileID: 4081236114205401102}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5640314306063321621
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 247198070364063973}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -7.52388, y: 6.800852, z: 22.084246}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 8199380654656981966}
+  - {fileID: 6998746958351381117}
+  - {fileID: 1587645112630451281}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4081236114205401102
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 247198070364063973}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: faaf95085dcac49609130c5a4328d686, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerStats:
+  - {fileID: 8199380654656981967}
+  - {fileID: 4130273003440657661}
+  - {fileID: 943635509719169408}
+  gameMenuOpen: 0
+  dialogueActive: 0
+  loadingBetweenAreas: 0
+  inventory:
+    itemsHeld: []
+    numberOfItems: 
+    referenceItems:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+  referenceItems:
+  - {fileID: 5624883218147149526, guid: b271b0b92801e45cb97ff5c83320d5b1, type: 3}
+  - {fileID: 5796749073372421375, guid: 09796997fd8bd41b0963675e6e0d803a, type: 3}
+  - {fileID: 6802269380558351650, guid: c4420b4100a444713b88f8d75a5f49d4, type: 3}
+  - {fileID: 1827631317392611902, guid: bcff8a43bbe1e48e8abb0bb8d9e9faf6, type: 3}
+  - {fileID: 2957027014813916357, guid: bd83ce4d8eeee4856a59cd8a7659cc38, type: 3}
+  - {fileID: 3071141490029236788, guid: 1de5c503c593941b5a84a5bf6cfb8af5, type: 3}
+--- !u!1 &2509008267084302868
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6998746958351381117}
+  - component: {fileID: 4130273003440657661}
+  m_Layer: 0
+  m_Name: Player2Stats
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6998746958351381117
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2509008267084302868}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 5640314306063321621}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4130273003440657661
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2509008267084302868}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e52fe9cb4f416495194dcc7f03243589, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  charachterName: Woody
+  currentPlayerLevel: 3
+  currentExperiencePoints: 543
+  experiencePointsNeededPerLevel: 
+  maxLevel: 10
+  baseExperiencePoints: 1000
+  currentHealthPoints: 80
+  maximumHealthPoints: 100
+  currentMagicPoints: 25
+  maximumMagicPoints: 30
+  magicPointsIncreasePerLevel: 
+  strength: 0
+  defence: 18
+  weaponName: 
+  weaponPower: 0
+  armorName: 
+  armorPower: 0
+  characterSprite: {fileID: 21300000, guid: e0ddba6d3fcf21f49949fcc95c849aac, type: 3}
+--- !u!1 &4533020802459019549
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1587645112630451281}
+  - component: {fileID: 943635509719169408}
+  m_Layer: 0
+  m_Name: Player3Stats
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &1587645112630451281
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4533020802459019549}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 5640314306063321621}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &943635509719169408
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4533020802459019549}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e52fe9cb4f416495194dcc7f03243589, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  charachterName: Woody
+  currentPlayerLevel: 3
+  currentExperiencePoints: 543
+  experiencePointsNeededPerLevel: 
+  maxLevel: 10
+  baseExperiencePoints: 1000
+  currentHealthPoints: 80
+  maximumHealthPoints: 100
+  currentMagicPoints: 25
+  maximumMagicPoints: 30
+  magicPointsIncreasePerLevel: 
+  strength: 0
+  defence: 18
+  weaponName: 
+  weaponPower: 0
+  armorName: 
+  armorPower: 0
+  characterSprite: {fileID: 21300044, guid: e0ddba6d3fcf21f49949fcc95c849aac, type: 3}
+--- !u!1 &8199380654656981964
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8199380654656981966}
+  - component: {fileID: 8199380654656981967}
+  m_Layer: 0
+  m_Name: Player1Stats
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8199380654656981966
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8199380654656981964}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 5640314306063321621}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8199380654656981967
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8199380654656981964}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e52fe9cb4f416495194dcc7f03243589, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  charachterName: Tim
+  currentPlayerLevel: 1
+  currentExperiencePoints: 250
+  experiencePointsNeededPerLevel: 
+  maxLevel: 10
+  baseExperiencePoints: 1000
+  currentHealthPoints: 80
+  maximumHealthPoints: 100
+  currentMagicPoints: 0
+  maximumMagicPoints: 30
+  magicPointsIncreasePerLevel: 
+  strength: 0
+  defence: 13
+  weaponName: 
+  weaponPower: 0
+  armorName: 
+  armorPower: 0
+  characterSprite: {fileID: 21300000, guid: c1b6df70f7b3149cfa2dfa8abbe7ff33, type: 3}
