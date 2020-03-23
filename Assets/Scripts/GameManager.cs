@@ -48,7 +48,7 @@ public class GameManager : MonoBehaviour
 
     public Item GetReferenceItemDetails(string itemName)
     {
-        for(int i =0; i < referenceItems.Length; i++)
+        for (int i = 0; i < referenceItems.Length; i++)
         {
             if (referenceItems[i].itemName.Equals(itemName))
             {
@@ -58,4 +58,10 @@ public class GameManager : MonoBehaviour
 
         return null;
     }
+
+    public void SortItemsInInventory()
+    {
+        playerInventory.Sort();
+    }
+
 }

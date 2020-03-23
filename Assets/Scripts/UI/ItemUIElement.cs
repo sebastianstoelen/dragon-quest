@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class ItemButton : MonoBehaviour
+public class ItemUIElement : MonoBehaviour
 {
     public Image buttonImage;
     public Text itemAmount;
-    public int buttonValue;
+    public int itemId;
 
     // Start is called before the first frame update
     void Start()

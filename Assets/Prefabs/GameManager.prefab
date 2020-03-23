@@ -53,13 +53,88 @@ MonoBehaviour:
   gameMenuOpen: 0
   dialogueActive: 0
   loadingBetweenAreas: 0
-  inventory:
-    itemsHeld: []
-    numberOfItems: 
-    referenceItems:
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
+  playerInventory:
+    inventoryEntries:
+    - itemName: 
+      itemAmount: 0
+    - itemName: 
+      itemAmount: 0
+    - itemName: 
+      itemAmount: 0
+    - itemName: 
+      itemAmount: 0
+    - itemName: Health Potion
+      itemAmount: 3
+    - itemName: 
+      itemAmount: 0
+    - itemName: 
+      itemAmount: 0
+    - itemName: 
+      itemAmount: 0
+    - itemName: 
+      itemAmount: 0
+    - itemName: 
+      itemAmount: 0
+    - itemName: 
+      itemAmount: 0
+    - itemName: 
+      itemAmount: 0
+    - itemName: 
+      itemAmount: 0
+    - itemName: 
+      itemAmount: 0
+    - itemName: 
+      itemAmount: 0
+    - itemName: 
+      itemAmount: 0
+    - itemName: 
+      itemAmount: 0
+    - itemName: 
+      itemAmount: 0
+    - itemName: 
+      itemAmount: 0
+    - itemName: 
+      itemAmount: 0
+    - itemName: 
+      itemAmount: 0
+    - itemName: 
+      itemAmount: 0
+    - itemName: 
+      itemAmount: 0
+    - itemName: 
+      itemAmount: 0
+    - itemName: 
+      itemAmount: 0
+    - itemName: 
+      itemAmount: 0
+    - itemName: 
+      itemAmount: 0
+    - itemName: 
+      itemAmount: 0
+    - itemName: 
+      itemAmount: 0
+    - itemName: 
+      itemAmount: 0
+    - itemName: Bronze Sword
+      itemAmount: 1
+    - itemName: 
+      itemAmount: 0
+    - itemName: 
+      itemAmount: 0
+    - itemName: 
+      itemAmount: 0
+    - itemName: 
+      itemAmount: 0
+    - itemName: 
+      itemAmount: 0
+    - itemName: 
+      itemAmount: 0
+    - itemName: 
+      itemAmount: 0
+    - itemName: 
+      itemAmount: 0
+    - itemName: 
+      itemAmount: 0
   referenceItems:
   - {fileID: 5624883218147149526, guid: b271b0b92801e45cb97ff5c83320d5b1, type: 3}
   - {fileID: 5796749073372421375, guid: 09796997fd8bd41b0963675e6e0d803a, type: 3}

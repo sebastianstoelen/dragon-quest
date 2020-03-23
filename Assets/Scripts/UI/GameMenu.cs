@@ -20,10 +20,21 @@ public class GameMenu : MonoBehaviour
     public Text statusName, statusHP, statusMP, statusStrenght, statusDefence, statusWeapon, statusWeaponPower, statusArmor, statusArmorPower, statusExp;
     public Image statusImage;
 
+    [Header("Item Window")]
+    public ItemUIElement[] itemElements;
+
     // Start is called before the first frame update
     void Start()
     {
-       
+        DeactivateAllWindows();
+    }
+
+    private void DeactivateAllWindows()
+    {
+        for(int i = 0; i < windows.Length; i ++)
+        {
+            windows[i].SetActive(false);
+        }
     }
 
     // Update is called once per frame
@@ -111,9 +122,14 @@ public class GameMenu : MonoBehaviour
 
     private void ShowWindowContent(int windowId)
     {
-        if (windowId == 1)
+        switch (windowId)
         {
-            ShowStatusWindowContent();
+            case 0:
+                ShowItemsWindowContent();
+                break;
+            case 1:
+                ShowStatusWindowContent();
+                break;
         }
     }
 
@@ -154,6 +170,30 @@ public class GameMenu : MonoBehaviour
         } else
         {
             return itemName;
+        }
+    }
+
+    private void ShowItemsWindowContent()
+    {
+        GameManager.instance.playerInventory.Sort();
+
+        for (int i = 0; i < itemElements.Length; i++)
+        {
+            itemElements[i].itemId = i;
+
+            if (GameManager.instance.playerInventory.HasItemAt(i))
+            {
+                itemElements[i].buttonImage.gameObject.SetActive(true);
+                itemElements[i].itemAmount.gameObject.SetActive(true);
+
+                Item referenceItem = GameManager.instance.GetReferenceItemDetails(GameManager.instance.playerInventory.GetItemNameAt(i));
+                itemElements[i].buttonImage.sprite = referenceItem.itemSprite;
+                itemElements[i].itemAmount.text = GameManager.instance.playerInventory.GetAmountOfItemAt(i).ToString();
+            } else
+            {
+                itemElements[i].buttonImage.gameObject.SetActive(false);
+                itemElements[i].itemAmount.gameObject.SetActive(false);
+            }
         }
     }
 }
