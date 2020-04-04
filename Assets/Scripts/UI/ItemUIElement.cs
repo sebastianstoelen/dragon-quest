@@ -20,4 +20,13 @@ public class ItemUIElement : MonoBehaviour
     {
         
     }
+
+    public void SelectItem()
+    {
+        if (GameManager.instance.playerInventory.HasItemAt(itemId))
+        {
+            string itemName = GameManager.instance.playerInventory.GetItemNameAt(itemId);
+            GameMenu.instance.SetActiveItem(GameManager.instance.GetReferenceItemDetails(itemName), itemName);
+        }
+    }
 }

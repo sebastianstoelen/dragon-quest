@@ -99,20 +99,20 @@ MonoBehaviour:
       itemAmount: 0
     - itemName: 
       itemAmount: 0
+    - itemName: Iron Armor
+      itemAmount: 2
+    - itemName: 
+      itemAmount: 0
+    - itemName: Iron Sword
+      itemAmount: 1
     - itemName: 
       itemAmount: 0
     - itemName: 
       itemAmount: 0
     - itemName: 
       itemAmount: 0
-    - itemName: 
-      itemAmount: 0
-    - itemName: 
-      itemAmount: 0
-    - itemName: 
-      itemAmount: 0
-    - itemName: 
-      itemAmount: 0
+    - itemName: Bronze Armor
+      itemAmount: 1
     - itemName: 
       itemAmount: 0
     - itemName: Bronze Sword

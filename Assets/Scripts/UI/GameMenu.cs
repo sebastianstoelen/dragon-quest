@@ -22,10 +22,25 @@ public class GameMenu : MonoBehaviour
 
     [Header("Item Window")]
     public ItemUIElement[] itemElements;
+    public Text itemNameText, itemDescriptionText, useButtonText;
+    public Item selectedItem;
+    public string selectedItemName;
+
+    public static GameMenu instance;
 
     // Start is called before the first frame update
     void Start()
     {
+        if (instance != null && instance != this)
+        {
+            Destroy(this.gameObject);
+        }
+        else
+        {
+            instance = this;
+        }
+        DontDestroyOnLoad(gameObject);
+
         DeactivateAllWindows();
     }
 
@@ -195,5 +210,24 @@ public class GameMenu : MonoBehaviour
                 itemElements[i].itemAmount.gameObject.SetActive(false);
             }
         }
+    }
+
+    public void SetActiveItem(Item itemSelectedInMenu, string itemSelectedInMenuName)
+    {
+        selectedItem = itemSelectedInMenu;
+        selectedItemName = itemSelectedInMenuName;
+
+        if (selectedItem.isItem)
+        {
+            useButtonText.text = "Use";
+        }
+
+        if (selectedItem.isArmor || selectedItem.isWeapon)
+        {
+            useButtonText.text = "Equip";
+        }
+
+        itemNameText.text = selectedItemName;
+        itemDescriptionText.text = selectedItem.itemDescription;
     }
 }
